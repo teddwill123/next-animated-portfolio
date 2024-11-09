@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": null,
+    "editor.defaultFoldingRangeProvider": null,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

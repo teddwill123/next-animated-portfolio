@@ -1,17 +1,20 @@
-"use CLient"
-import React from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+"use CLient";
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NavLink = ({ link }) => {
-
-    const pathName = usePathname();
-    console.log(pathName);
+  const pathName = usePathname();
   return (
-    <Link className={`rounded p-1 ${pathName === link.url && "bg-black text-white"}`} href={link.url}>
-        {link.title}
+    <Link
+      className={`rounded p-1 ${
+        pathName === link.url && "bg-black text-white"
+      }`}
+      href={link.url}
+    >
+      {link.title}
     </Link>
   );
 };
 
-export default NavLink
+export default NavLink;
